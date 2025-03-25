@@ -91,7 +91,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "(Clang|GNU|Intel)")
   # types is usually more appropriate.
   if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE
-        "RelWithAssert"
+        "Release"
         CACHE
           STRING
           "Choose the type of build. Options are: None Debug Release RelWithAssert RelWithDebInfo MinSizeRel.\n\
