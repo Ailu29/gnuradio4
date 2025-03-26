@@ -13,6 +13,9 @@ add_library(
   include/gnuradio-4.0/basic/StreamToDataSet.hpp
   include/gnuradio-4.0/basic/SyncBlock.hpp
   include/gnuradio-4.0/basic/Trigger.hpp)
+
+  add_subdirectory(include/gnuradio-4.0/basic)
+  
 target_link_libraries(gr-basic INTERFACE gnuradio-core gnuradio-algorithm)
 target_include_directories(gr-basic INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
                                               $<INSTALL_INTERFACE:include/>)

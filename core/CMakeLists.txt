@@ -58,10 +58,10 @@ configure_file("${PROJECT_SOURCE_DIR}/cmake/config.hpp.in"
 install(
   TARGETS gnuradio-core
   EXPORT graphTargets
-  PUBLIC_HEADER DESTINATION include/)
+  PUBLIC_HEADER DESTINATION include/gnuradio-4.0/)
 
 add_subdirectory(src)
-
+add_subdirectory(include/gnuradio-4.0/thread)
 if(ENABLE_TESTING)
   add_subdirectory(test)
   add_subdirectory(benchmarks)

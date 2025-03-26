@@ -3,7 +3,7 @@ target_include_directories(gnuradio-algorithm INTERFACE $<BUILD_INTERFACE:${CMAK
 target_link_libraries(gnuradio-algorithm INTERFACE gnuradio-options gnuradio-meta vir fftw fmt magic_enum)
 
 add_subdirectory(src)
-
+add_subdirectory(include/gnuradio-4.0/algorithm)
 if (ENABLE_TESTING)
     add_subdirectory(test)
 endif ()

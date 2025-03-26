@@ -1,7 +1,7 @@
 add_library(gr-filter INTERFACE)
 target_link_libraries(gr-filter INTERFACE gnuradio-core)
 target_include_directories(gr-filter INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/> $<INSTALL_INTERFACE:include/>)
-
+add_subdirectory(include/gnuradio-4.0/filter)
 if (ENABLE_TESTING)
     add_subdirectory(test)
 endif ()
