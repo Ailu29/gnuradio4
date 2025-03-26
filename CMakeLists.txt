@@ -499,7 +499,7 @@ SET(GR_INCLUDE_DIR     include CACHE PATH "Path to install header files")
 #SET(GRC_EXAMPLES_DIR   ${GR_PKG_DATA_DIR}/examples CACHE PATH "Path to install GRC example flowgraphs")
 
 add_subdirectory(bench) # custom ut addon for microbenchmarking
-
+add_subdirectory(third_party/magic_enum)
 add_subdirectory(core)
 add_subdirectory(meta)
 add_subdirectory(algorithm)
