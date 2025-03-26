@@ -19,6 +19,7 @@ set(public_headers
     include/gnuradio-4.0/Message.hpp
     include/gnuradio-4.0/plugin.hpp
     include/gnuradio-4.0/PluginLoader.hpp
+    include/gnuradio-4.0/PmtTypeHelpers.hpp
     include/gnuradio-4.0/Port.hpp
     include/gnuradio-4.0/PortTraits.hpp
     include/gnuradio-4.0/Profiler.hpp
@@ -52,6 +53,9 @@ target_link_libraries(
 # configure a header file to pass the CMake settings to the source code
 configure_file("${PROJECT_SOURCE_DIR}/cmake/config.hpp.in"
                "${CMAKE_CURRENT_BINARY_DIR}/include/gnuradio-4.0/config.hpp" @ONLY)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/include/gnuradio-4.0/config.hpp"
+        DESTINATION ${GR_INCLUDE_DIR}/gnuradio-4.0)
+
 # TODO: install configure file... but not really meaningful for header only library, since compile flags are defined by
 # the user...
 

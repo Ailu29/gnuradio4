@@ -19,7 +19,8 @@ if(NOT EMSCRIPTEN)
   include(GenerateExportHeader)
   generate_export_header(gnuradio-plugin)
   # TODO install exported headers
-
+  install(FILES gnuradio-plugin_export.h
+  DESTINATION ${GR_INCLUDE_DIR})
   install(
     TARGETS gnuradio-plugin
     EXPORT graphPluginTargets

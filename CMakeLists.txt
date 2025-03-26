@@ -483,20 +483,9 @@ if(ENABLE_TESTING AND (UNIX OR APPLE))
   message("Building Tests and benchmarks.")
 endif()
 
-#SET(GR_RUNTIME_DIR     bin CACHE PATH "Path to install all binaries")
-#SET(GR_LIBRARY_DIR     lib${LIB_SUFFIX} CACHE PATH "Path to install libraries")
+
 SET(GR_INCLUDE_DIR     include CACHE PATH "Path to install header files")
-#SET(GR_CMAKE_DIR       ${CMAKE_MODULES_DIR}/gnuradio)
-#SET(GR_DATA_DIR        share CACHE PATH "Base location for data")
-#SET(GR_PKG_DATA_DIR    ${GR_DATA_DIR}/${CMAKE_PROJECT_NAME} CACHE PATH "Path to install package data")
-#SET(GR_DOC_DIR         ${GR_DATA_DIR}/doc CACHE PATH "Path to install documentation")
-#SET(GR_PKG_DOC_DIR     ${GR_DOC_DIR}/${CMAKE_PROJECT_NAME}-${DOCVER} CACHE PATH "Path to install package docs")
-#SET(GR_MAN_DIR         ${GR_DATA_DIR}/man CACHE PATH "Path to install man pages")
-#SET(GR_LIBEXEC_DIR     libexec CACHE PATH "Path to install libexec files")
-#SET(GR_PKG_LIBEXEC_DIR ${GR_LIBEXEC_DIR}/${CMAKE_PROJECT_NAME} CACHE PATH "Path to install package libexec files")
-#SET(GRC_BLOCKS_DIR     ${GR_PKG_DATA_DIR}/grc/blocks CACHE PATH "Path to install GRC blocks")
-#SET(GR_THEMES_DIR      ${GR_PKG_DATA_DIR}/themes CACHE PATH "Path to install QTGUI themes")
-#SET(GRC_EXAMPLES_DIR   ${GR_PKG_DATA_DIR}/examples CACHE PATH "Path to install GRC example flowgraphs")
+
 
 add_subdirectory(bench) # custom ut addon for microbenchmarking
 add_subdirectory(third_party/magic_enum)
